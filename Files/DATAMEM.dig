@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>2</version>
+  <attributes>
+    <entry>
+      <string>shapeType</string>
+      <shapeType>LAYOUT</shapeType>
+    </entry>
+    <entry>
+      <string>backgroundColor</string>
+      <awt-color>
+        <red>255</red>
+        <green>255</green>
+        <blue>204</blue>
+        <alpha>255</alpha>
+      </awt-color>
+    </entry>
+    <entry>
+      <string>romContent</string>
+      <romList>
+        <roms/>
+      </romList>
+    </entry>
+    <entry>
+      <string>Height</string>
+      <int>10</int>
+    </entry>
+    <entry>
+      <string>Width</string>
+      <int>6</int>
+    </entry>
+  </attributes>
+  <visualElements>
+    <visualElement>
+      <elementName>RAMDualPort</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>8</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>DATA</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="400" y="300"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>S_32</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="180" y="280"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>rs2</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="180" y="320"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Input Splitting</string>
+          <string>32</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>2,8</string>
+        </entry>
+      </elementAttributes>
+      <pos x="200" y="280"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>MW</string>
+        </entry>
+      </elementAttributes>
+      <pos x="180" y="360"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>MR</string>
+        </entry>
+      </elementAttributes>
+      <pos x="180" y="400"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>CLK</string>
+        </entry>
+      </elementAttributes>
+      <pos x="180" y="440"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>MO</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="560" y="340"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="180" y="320"/>
+      <p2 x="400" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="180" y="400"/>
+      <p2 x="220" y="400"/>
+    </wire>
+    <wire>
+      <p1 x="200" y="340"/>
+      <p2 x="400" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="460" y="340"/>
+      <p2 x="560" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="180" y="280"/>
+      <p2 x="200" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="180" y="360"/>
+      <p2 x="200" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="360"/>
+      <p2 x="400" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="180" y="440"/>
+      <p2 x="240" y="440"/>
+    </wire>
+    <wire>
+      <p1 x="220" y="300"/>
+      <p2 x="400" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="220" y="380"/>
+      <p2 x="400" y="380"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="360"/>
+      <p2 x="240" y="440"/>
+    </wire>
+    <wire>
+      <p1 x="200" y="340"/>
+      <p2 x="200" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="220" y="380"/>
+      <p2 x="220" y="400"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>
